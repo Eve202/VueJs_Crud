@@ -50,7 +50,7 @@ const storeData = () => {
       const randomIndex = Math.floor(Math.random() * characters.length);
       generateId += characters[randomIndex];
     }
-    console.log(oldComputer,typeof oldComputer) 
+    // console.log(oldComputer,typeof oldComputer) 
     if (localStorage.getItem("computers") ) {
       oldComputer = JSON.parse(localStorage.getItem("computers"))
       // console.log(!Array.isArray(localStorage.getItem("computers")), localStorage.getItem("computers"))
@@ -72,8 +72,9 @@ const storeData = () => {
 //   { id: 1, name: "Lenovo ThinkPad X1 Carbon", brand: "Lenovo", processor: "Intel Core i7-1260P", ram: "16 Go", storage: "512 Go SSD", os: "Windows 11 Pro", price: 1800 },
 </script>
 <template>
-  <form action="" method="post" enctype="multipart/form-data" class="bg-white relative">
-    <button class="absolute top-2 right-2 "  @click="$emit('close')"><AnOutlinedCloseCircle class="text-teal-700" /></button>
+  <div class="bg-white relative">
+    <button class="absolute top-2 right-2 "  @click="$emit('close')"><AnOutlinedCloseCircle class="text-teal-700 text-xl" /></button>
+    <form action="" method="post" enctype="multipart/form-data" >
 
     <div class="flex flex-col space-y-4 p-3 md:p-6 rounded-lg shadow-md">
       <div>
@@ -215,4 +216,5 @@ const storeData = () => {
       </button>
     </div>
   </form>
+  </div>
 </template>

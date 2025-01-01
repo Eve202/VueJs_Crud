@@ -17,7 +17,7 @@ const error = reactive({ picture: "", name: "", processor: "" });
 
 // Fonction pour gérer l'événement 'change'
 const handleFileUpload = (event) => {
-  console.log(event.target.value);
+  // console.log(event.target.value);
   const files = event.target.files;
   if (files && files.length > 0) {
     const url = new FileReader();
@@ -68,7 +68,7 @@ const storeData = () => {
 
 watchEffect(() => {
     oldvalues.value = JSON.parse(localStorage.getItem('computers'))[props.id]
-    console.log(oldvalues.value, oldvalues.value.ram, )
+    // console.log(oldvalues.value, oldvalues.value.ram, )
     name.value = oldvalues.value.name;
     processor.value = oldvalues.value.processor ;
     

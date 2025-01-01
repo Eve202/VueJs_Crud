@@ -9,7 +9,7 @@ const props = defineProps({
 watchEffect(() => {
     const computers = JSON.parse(localStorage.getItem('computers'))
     computer.value = computers[props.id]
-    console.log( props.id, computers[props.id] );
+    // console.log( props.id, computers[props.id] );
 })
 </script>
 <template>
