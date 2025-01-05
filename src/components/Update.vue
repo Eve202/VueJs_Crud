@@ -89,7 +89,7 @@ watchEffect(() => {
 </script>
 <template>
   <div class="relative bg-white">
-    <button type="button" class="absolute top-5 right-2 "  @click.stop="$emit('close')"><AnOutlinedCloseCircle class="text-teal-700 text-xl" /></button>
+    <button type="button" class="absolute top-5 right-4 "  @click.stop="$emit('close')"><AnOutlinedCloseCircle class="text-teal-700 text-xl" /></button>
   <form action="" method="post" enctype="multipart/form-data" >
 
     <div class="flex flex-col space-y-4 p-3 md:p-6 rounded-lg shadow-md ">

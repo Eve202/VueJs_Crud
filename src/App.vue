@@ -37,7 +37,7 @@ watchEffect(() => {
     <h2 class="text-teal-700 text-2xl md:text-4xl font-bold text-center">
       Crud with Vue Js
     </h2>
-    <div v-if="!count_pc" class="flex flex-col space-y-4 items-center justify-center mt-6  ">
+    <div v-if="!count_pc" class="flex flex-col space-y-4 items-center justify-center  md:max-w-xl mx-auto mt-5 md:mt-8 ">
       <MdRoundComputer class="text-9xl text-gray-700" />
       <p class="indent-4">Cette page est destinée à afficher une liste des ordinateurs que vous avez enregistrés. Veuillez cliquer sur le bouton <span class="font-bold ">'Ajouter'</span>, situé en bas de la page, pour enregistrer un ordinateur ainsi que ses caractéristiques. Une fois l'enregistrement effectué, vous aurez la possibilité de <span class="font-bold ">consulter</span>  ces caractéristiques, de les <span class="font-bold ">modifier ou de supprimer</span> l'ordinateur ainsi que toutes ses caractéristiques associées.  </p>
       <p >Nous vous remercions pour votre attention !</p>
@@ -50,7 +50,7 @@ watchEffect(() => {
     <Teleport to="body">
       <div v-show="show" @click.self="show = false"
         class="bg-black bg-opacity-20 flex items-center  justify-center px-2 py-5 md:py-8 fixed top-0 left-0 h-screen w-full">
-        <div class="scrollYDiv overflow-y-scroll  max-w-xl w-full max-h-[680px] mx-auto">
+        <div class="scrollYDiv overflow-y-scroll  max-w-xl w-full max-h-[600px] sm:max-h-fit lg:max-h-[680px] mx-auto">
           <!-- Création d'un ordinateur  -->
           <CreatePc v-if="type === 'Create'" @close="close" />
 

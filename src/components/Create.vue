@@ -73,7 +73,7 @@ const storeData = () => {
 </script>
 <template>
   <div class="bg-white relative">
-    <button class="absolute top-2 right-2 "  @click="$emit('close')"><AnOutlinedCloseCircle class="text-teal-700 text-xl" /></button>
+    <button class="absolute top-5 right-4 "  @click="$emit('close')"><AnOutlinedCloseCircle class="text-teal-700 text-xl" /></button>
     <form action="" method="post" enctype="multipart/form-data" >
 
     <div class="flex flex-col space-y-4 p-3 md:p-6 rounded-lg shadow-md">
